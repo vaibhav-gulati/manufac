@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Description
+1. Used the single component StatsTable, that takes propertyname as a prop, By this way we can reuse the same component for other properties without creating separate components for each property.
+2. Wine-Data.json is added in the folder structure and same is imported in the component.
+3. Used the inline CSS, and removed the unused js, css file from folder structire to reduce the clutter.
+4. used parsefloat while calculating the stats, as for some records flavanoid value is string and it would result in a nan if not converted to float.
+5. for Gamma calculation used the formula Gamma = (Ash * Hue) / Magnesium, and calculated value is rounded off to 3 decimal places.
+6. Since Gamma is added from above calculation, and mode represents the value that occurs most frequently in a dataset. The above dataset gives more than 30 modes. As in the table UI was not looking nice, as more value of mode table was getting strected. So added the condition to show atmax 3 modes and if there are more than 3 then those will shown in the tooltip.(refer the screenshot for gamma)
+
 ## Available Scripts
 
 In the project directory, you can run:
