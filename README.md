@@ -1,6 +1,5 @@
-# Getting Started with Create React App
+# Manufac
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Description
 1. Used the single component StatsTable, that takes propertyname as a prop, By this way we can reuse the same component for other properties without creating separate components for each property.
