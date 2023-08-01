@@ -28,7 +28,16 @@ Similalry any property can be passed as prop in StatsTable component
 
 2. Screenshot for Gamma property, showing 3 modes only, if more then 3 exists then it will be visible once user hover on that td cell
 
+a. When mouse is not hovering the td, hence no tooltip
+
+![image](https://github.com/vaibhav-gulati/manufac/assets/54852286/2866aff9-989c-4f77-9eda-4db8449f2d7a)
+
+
+
+b. When mouse is hovering the td
+
 ![image](https://github.com/vaibhav-gulati/manufac/assets/54852286/caacbced-6c8a-44ed-b4a2-22a79afbb2ca)
+
 
 
 
