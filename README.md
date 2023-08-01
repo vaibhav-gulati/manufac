@@ -4,11 +4,38 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Description
 1. Used the single component StatsTable, that takes propertyname as a prop, By this way we can reuse the same component for other properties without creating separate components for each property.
+
+`
+    <StatsTable property="Flavanoids" />
+     <StatsTable property="Gamma" />
+`
+Similalry any property can be passed as prop in StatsTable component
+
 2. Wine-Data.json is added in the folder structure and same is imported in the component.
 3. Used the inline CSS, and removed the unused js, css file from folder structire to reduce the clutter.
 4. used parsefloat while calculating the stats, as for some records flavanoid value is string and it would result in a nan if not converted to float.
 5. for Gamma calculation used the formula Gamma = (Ash * Hue) / Magnesium, and calculated value is rounded off to 3 decimal places.
 6. Since Gamma is added from above calculation, and mode represents the value that occurs most frequently in a dataset. The above dataset gives more than 30 modes. As in the table UI was not looking nice, as more value of mode table was getting strected. So added the condition to show atmax 3 modes and if there are more than 3 then those will shown in the tooltip.(refer the screenshot for gamma)
+
+## Screenshots
+
+1. Screenshot for Flavanoid Property
+
+![image](https://github.com/vaibhav-gulati/manufac/assets/54852286/3daec772-0199-4ec2-95c7-1895161186f8)
+
+
+
+2. Screenshot for Gamma property, showing 3 modes only if more then 3 exists then it will be visible once user hover on that td cell
+
+![image](https://github.com/vaibhav-gulati/manufac/assets/54852286/caacbced-6c8a-44ed-b4a2-22a79afbb2ca)
+
+
+
+
+3. Screenshot for whole Page
+
+ ![image](https://github.com/vaibhav-gulati/manufac/assets/54852286/f0869ec6-9e11-4e64-8d5e-6b8d55764a32)
+
 
 ## Available Scripts
 
